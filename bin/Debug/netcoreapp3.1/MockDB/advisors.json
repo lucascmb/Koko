@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Vinissoul",
+    "HeritageAmount": 125400,
+    "ClientAmount": 10,
+    "Rentability": 100,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Carlos Araujo",
+    "HeritageAmount": 1929203,
+    "ClientAmount": 7,
+    "Rentability": 25,
+    "OpenForNewClients": true
+  }
+]
