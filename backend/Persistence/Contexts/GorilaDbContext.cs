@@ -34,6 +34,7 @@ namespace Koko.Persistence.Contexts
             builder.Entity<Advisor>().HasMany(p => p.Clients).WithOne(p => p.Advisor).HasForeignKey(p => p.AdvisorId);
             builder.Entity<Advisor>().HasMany(p => p.Products).WithOne(p => p.Advisor).HasForeignKey(p => p.AdvisorId);
             builder.Entity<Advisor>().HasMany(p => p.Depoiment).WithOne(p => p.Advisor).HasForeignKey(p => p.AdvisorId);
+            //builder.Entity<Advisor>().HasMany(p => p.ProductsAndEspecialist).WithOne(p => p.Advisor).HasForeignKey(p => p.AdvisorId);
 
 
 

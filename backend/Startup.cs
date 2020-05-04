@@ -1,26 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AutoMapper;
+using Koko.Domain.Models;
+using Koko.Domain.Repositories;
+using Koko.Domain.Services;
 using Koko.Persistence.Contexts;
+using Koko.Persistence.Repositories;
+using Koko.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore;
-using Koko.Domain.Repositories;
-using Koko.Domain.Services;
-using Koko.Services;
-using Koko.Persistence.Repositories;
-using AutoMapper;
-using Koko.Domain.Models;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
-using Koko.Resources;
 
 namespace Koko
 {
@@ -84,15 +78,41 @@ namespace Koko
             {
                 context.Database.EnsureCreated();
 
-                var jsonString = File.ReadAllText("MockDB/advisors.json");
+                var jsonString = File.ReadAllText("MockDB/products.json");
 
-                var fund = JsonSerializer.Deserialize<List<Advisor>>(jsonString);
-                context.Advisors.AddRange(fund);
+                var products = JsonSerializer.Deserialize<List<Product>>(jsonString);
+                context.AddRange(products);
 
                 jsonString = File.ReadAllText("MockDB/clients.json");
 
-                //var client = JsonSerializer.Deserialize<List<Client>>(jsonString);
-                //context.Clients.AddRange(client);
+                var clients = JsonSerializer.Deserialize<List<Client>>(jsonString);
+                    
+                for( int i = 0; i < products.Count(); i++)
+                {
+                    clients[i % clients.Count].Products.Add(products[i]);
+                    products[i].Client = clients[i % clients.Count];
+                    products[i].ClientId = products[i].Id;
+                    clients[i % clients.Count].HeritageAmount += products[i].ValueAmount;
+                }
+
+                context.Clients.AddRange(clients);
+
+                jsonString = File.ReadAllText("MockDB/advisors.json");
+
+                var advisors = JsonSerializer.Deserialize<List<Advisor>>(jsonString);
+
+                for( int i = 0; i < clients.Count(); i++ )
+                {
+                    advisors[i % advisors.Count].ClientAmount++;
+                    advisors[i % advisors.Count].Clients.Add(clients[i]);
+
+                    advisors[i % advisors.Count].HeritageAmount += clients[i].HeritageAmount;
+
+                    clients[i].Advisor = advisors[i % advisors.Count];
+                    clients[i].AdvisorId = advisors[i % advisors.Count].Id;
+                }
+
+                context.Advisors.AddRange(advisors);
 
                 context.SaveChanges();
             }

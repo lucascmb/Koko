@@ -24,6 +24,7 @@ namespace Koko.Controllers
         public async Task<IEnumerable<AdvisorResource>> GetAllAsync()
         {
             var advisors = await _advisorService.ListAsync();
+
             var resources = _mapper.Map<IEnumerable<Advisor>, IEnumerable<AdvisorResource>>(advisors);
 
             return resources;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ITVj5yAJ1Nzn9WQCz/TgY8DQKG83Hmzi6n4Xtx9iKLyfvhKZJMKIb+aBXOUS+6D2SthozN4LqPO3tMMM2M2Yg==",
+  "dgSpecHash": "ebp0Z+eFL0h2ns2Bmah/9/XISpHsYQPSKzOj6F0F+Aw4O2kGWAXqqJA59DUeV9ndFyQZzfNARV2m+82DLyE+DQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Desafio Gorila\\Gorila Match\\Koko.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Koko\\Koko\\backend\\Koko.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

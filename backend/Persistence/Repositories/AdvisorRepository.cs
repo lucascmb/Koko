@@ -18,7 +18,9 @@ namespace Koko.Persistence.Repositories
 
         public async Task<IEnumerable<Advisor>> ListAsync()
         {
-            return await _context.Advisors.ToListAsync();
+            var retorno = _context.Advisors.ToListAsync();
+
+            return await retorno;
         }
     }
 }

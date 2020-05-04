@@ -17,8 +17,8 @@ namespace Koko.Domain.Models
         public string AdvisorsOffice { get; set; }
         public string Email { get; set; }
         public string Curriculum { get; set; }
-        //public IList<string> Especialist { get; set; } = new List<string>();
 
+        //public IList<GenericString> ProductsAndEspecialist { get; set; } = new List<GenericString>();
         public IList<Product> Products { get; set; } = new List<Product>();
         public IList<Client> Clients { get; set; } = new List<Client>();
         public IList<Depoiment> Depoiment { get; set; } = new List<Depoiment>();

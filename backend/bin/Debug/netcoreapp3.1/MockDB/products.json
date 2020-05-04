@@ -1,10 +1,37 @@
 [
   {
-    "ProductType": "Ação",
-    "Amout": 125,
-    "ValueMount": 20145
+    "ProductType": 1,
+    "Amount": 125,
+    "ValueAmount": 12578
   },
   {
-
+    "ProductType": 2,
+    "Amount": 125,
+    "ValueAmount": 85413
+  },
+  {
+    "ProductType": 3,
+    "Amount": 125,
+    "ValueAmount": 13541
+  },
+  {
+    "ProductType": 6,
+    "Amount": 125,
+    "ValueAmount": 457892
+  },
+  {
+    "ProductType": 1,
+    "Amount": 125,
+    "ValueAmount": 10235
+  },
+  {
+    "ProductType": 4,
+    "Amount": 125,
+    "ValueAmount": 20140
+  },
+  {
+    "ProductType": 7,
+    "Amount": 125,
+    "ValueAmount": 12254
   }
 ]
