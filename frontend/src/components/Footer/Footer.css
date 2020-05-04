@@ -1,0 +1,60 @@
+.bloco {
+    height: 100px;
+    font: 300 14px 'Lato', sans-serif;
+}
+
+.gorila, .shawee {
+    position: absolute;
+    margin-bottom: 0;
+}
+
+.brand-logo {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.gorila {
+    right: 25vw;
+}
+
+.shawee {
+    left: 25vw;
+}
+
+.gorila-logo {
+    height: 60px;
+}
+
+.shawee-logo {
+    height: 80px;
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+
+    .gorila {
+        right: 15vw;
+    }
+    
+    .shawee {
+        left: 15vw;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .gorila {
+        right: 5vw;
+    }
+    
+    .shawee {
+        left: 5vw;
+    }
+
+    .brand-logo {
+        height: 40px;
+    }
+
+}

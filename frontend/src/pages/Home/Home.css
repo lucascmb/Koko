@@ -1,0 +1,98 @@
+.inicial {
+    height: 80vh;
+    background-image: linear-gradient(to right, #1CA3A8, #5BE484);
+    margin-top: 50px;
+    font: 300 14px 'Lato', sans-serif;
+    color: white;
+}
+
+.segundo {
+    height: 110vh;
+    color: black;
+    font: 300 14px 'Lato', sans-serif;
+}
+
+.terceiro {
+    height: 110vh;
+    background-color: darkslategray;
+    color: #E5E5E5;
+    font: 300 14px 'Lato', sans-serif;
+}
+
+.left {
+    text-align: left;
+    margin-left: 7vw;
+}
+
+.right {
+    text-align: right;
+    margin-right: 7vw;
+}
+
+.top {
+    padding-top: 20vh;
+}
+
+.bottom, .top2 {
+    padding-top: 10vh;
+}
+
+.text {
+    font: 300 20px 'Lato', sans-serif;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+    .inicial {
+        height: 60vh;
+    }
+
+    .segundo {
+        height: 100vh;
+    }
+
+    .top {
+        padding-top: 10vh;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .text {
+        font-size: 0.8em;
+    }
+
+    .inicial {
+        height: 60vh;
+    }
+
+    .segundo {
+        height: 80vh;
+    }
+
+    .top {
+        padding-top: 10vh;
+    }
+
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+body {
+    font: 400 14px 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #e5e5e5;
+}
+
+button {
+    cursor: pointer;
+}
+
+input, button, textarea {
+    font: 400 18px 'Lato', sans-serif;
+}

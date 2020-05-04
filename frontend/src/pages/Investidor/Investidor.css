@@ -1,0 +1,14 @@
+.texto {
+    margin-top: 3vh;
+}
+
+.row {
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+
+.title {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
