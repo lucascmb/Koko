@@ -1,0 +1,20 @@
+#direito {
+    background: #FCFCFC;
+}
+
+#esquerdo {
+    background-image: url('../../assets/img/Esquerdo.png');
+}
+
+#direito .row{
+    display: flex !important;
+    text-align : left;
+}
+
+#botao {
+    background-image: linear-gradient(to right, #1CA3A8, #5BE484);
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+}

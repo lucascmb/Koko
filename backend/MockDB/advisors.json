@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Vinissoul",
+    "Name": "Alberto Augusto",
     "HeritageAmount": 0,
     "ClientAmount": 0,
     "Rentability": 7,
@@ -8,6 +8,62 @@
   },
   {
     "Name": "Carlos Araujo",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 4.2,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Lucas Monteiro",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 7,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Joao Carlos",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 4.2,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Igor Siqueira",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 7,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Vinicius Clark",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 4.2,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Paulo Henrique",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 7,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Hiago Reis",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 4.2,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Lucas Fonseca",
+    "HeritageAmount": 0,
+    "ClientAmount": 0,
+    "Rentability": 7,
+    "OpenForNewClients": true
+  },
+  {
+    "Name": "Marcelo Leocardo",
     "HeritageAmount": 0,
     "ClientAmount": 0,
     "Rentability": 4.2,

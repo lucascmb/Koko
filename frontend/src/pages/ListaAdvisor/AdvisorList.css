@@ -1,0 +1,68 @@
+.texto {
+    margin-top: 3vh;
+}
+
+.row {
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+
+.title {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+    .inicial {
+        height: 60vh;
+    }
+
+    .segundo {
+        height: 100vh;
+    }
+
+    .top {
+        padding-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .text {
+        font-size: 0.8em;
+    }
+
+    .inicial {
+        height: 60vh;
+    }
+
+    .segundo {
+        height: 80vh;
+    }
+
+    .top {
+        padding-top: 10vh;
+    }
+}

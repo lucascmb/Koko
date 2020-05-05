@@ -35,10 +35,6 @@ namespace Koko.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveInvestorResource resource)
         {
-            const string accountSid = "ACc9bf8ff4c2db1b5a66717868eaa5bd4e";
-            const string authToken = "c9aed42b750cdae5701542f5705accb8";
-
-            TwilioClient.Init(accountSid, authToken);
 
             if (!ModelState.IsValid) return BadRequest(ModelState.GetErrorMessages());
 
@@ -50,13 +46,7 @@ namespace Koko.Controllers
 
             var investorResource = _mapper.Map< Investor, InvestorResource>(result.Investor);
 
-            var message = MessageResource.Create(
-            body: "Join Earth's mightiest heroes. Like Kevin Bacon.",
-            from: "+12025191929",
-            to: new Twilio.Types.PhoneNumber("+5521997519003")
-        );
-
-            return Ok(message.Sid);
+            return Ok(investorResource);
         }
     }
 }

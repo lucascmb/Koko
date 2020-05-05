@@ -21,7 +21,7 @@ function Home() {
           </div>
         </div>
         <div className="segundo">
-          <div className="container">
+          <div className="">
             <h1 className="top2 left">Por que eu, jovem de carreira acelerada,
             <br/>
             deveria olhar para a Koko?</h1>
@@ -58,7 +58,7 @@ function Home() {
           </div>
         </div>
         <div className="terceiro">
-          <div className="container">
+          <div className="">
             <h1 className="top2 left">Por que eu, assessor de investimento,
             <br/>
             deveria olhar para a Koko?</h1>
